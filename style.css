@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.print-area{
+    width: 80%;
+    margin: 80px auto;
+}
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(33, 33, 46);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    filter: grayscale(30%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+}
+.header-text{
+    color: #fff;
+    width: 60%;
+    margin-left: auto;
+}
+.header-text h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+.header-text p{
+    font-size: 20px;
+    color: lightgray;
+}
+/* ------------content--------------- */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.left-area .contact{
+    margin-top: 130px;
+    padding: 0 10px;
+}
+.contact h2{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+.contact h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact p{
+    font-size: 17px;
+}
+/* ---------skills----------------- */
+.skills{
+    margin-top: 30px;
+}
+.skills h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.bars .bar h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bars .bar-2 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 192, 192);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar-2 span::before{
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 80%;
+    background-color: #333;
+    top: 50%;
+    left: 2px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+.bars .bar-3 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 192, 192);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar-3 span::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: #333;
+    top: 50%;
+    left: 2px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+.follow h2{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.follow h3{
+    margin: 10px 0;
+    font-size: 18px;
+}
+.follow p{
+    font-size: 15px;
+    color: gray;
+}
+
+
+.right-area{
+    width: 70%;
+    padding: 50px;
+}
+.right-area h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.right-area h1 i{
+    color: lightgray;
+    margin-right: 30px;
+    font-size: 50px;
+}
+.right-area p{
+    font-size: 17px;
+    color: gray;
+    text-align: justify;
+    word-break: break-all;
+    padding-left: 70px;
+    margin-top: 10px;
+}
+/* ---------groups----------------- */
+.groups .group{
+    position: relative;
+}
+.group{
+    margin: 20px 0;
+}
+.group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.group h4{
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 70px;
+    color: gray;
+}
+.group span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* --------button----------- */
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background-color: #333;
+}
+
+
+
